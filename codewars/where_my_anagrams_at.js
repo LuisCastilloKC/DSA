@@ -20,7 +20,7 @@
 // For Go: Empty string slice is expected when there are no anagrams found.
 
 
-
+// SOLUTION 1
 function checkAnagrams(word, words){
     let anagrams = [];
 
@@ -29,7 +29,22 @@ function checkAnagrams(word, words){
         if (words[i].split("").sort().join("") === splitWord) {
           anagrams.push(words[i])
         }
-        
+      }
+      return anagrams
+  }
+
+// -------------------------------------------------------------------------
+
+
+// SOLUTION 2
+  function checkAnagrams(word, words){
+    let anagrams = [];
+
+      let splitWord = word.split("").sort().join("")
+      for (const w of words) {
+        if (w.split("").sort().join("") === splitWord) {
+          anagrams.push(w)
+        } 
       }
       return anagrams
   }
