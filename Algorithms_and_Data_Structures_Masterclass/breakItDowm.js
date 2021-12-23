@@ -48,7 +48,7 @@ function charCount(str){
             // if the char is number/letter AND-* not in object, add it to object and set value to 1
             else { 
                 result[char] = 1;
-        }
+        };
     }
         // if character is something else (space, period, etc.) don't do anythiung
     // return object at end
