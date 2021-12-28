@@ -27,3 +27,5 @@ function same(arr1, arr2){
 }
 
 console.log(same([1,2,3,2], [9,1,4,4]))
+
+// this is an O(n^2)
