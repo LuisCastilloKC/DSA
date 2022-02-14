@@ -1,9 +1,9 @@
-let minOperations = function(log){
+let minOperations = function(logs){
     let init = 0;
-    for (let i = 0; i< localStorage.length; i++){
+    for (let i = 0; i< logs.length; i++){
         if(logs[i] == "../"){
             if(init > 0){
-                init -= ;
+                init -= ''
             }
         } else if (logs[i] == "./"){
             init += 0
