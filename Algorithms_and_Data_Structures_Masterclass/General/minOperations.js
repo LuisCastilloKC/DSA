@@ -12,4 +12,4 @@ let minOperations = function(logs){
         }
     }
     return init < 0 ? 0 : init;
-};
+}; 
