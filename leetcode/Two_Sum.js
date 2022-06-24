@@ -33,11 +33,20 @@
 
 
 
-var twoSum = function(nums, target) {
-    
+function twoSum(nums, target) {
+    //hash map
+    let map = {}
+    for(let i = 0; nums.length; i++){
+     let value = nums[i]
+     let pair = target - value
+     if(map[pair] !== undefined){
+         return [map[pair], i]
+     }else {
+          map[value] = i
+     }
+    }
 };
-
-
-nums = [2,7,11,15], target = 9
-nums = [3,2,4], target = 6
-nums = [3,3], target = 6
+// nums = [2,7,11,15], target = 9
+// nums = [3,2,4], target = 6
+//nums = [3,3], target = 6
+console.log([3,3], 6)
